@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>研知有锂</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <style>
         /* 全局样式 */
         body,
@@ -18,13 +19,9 @@
         /* 页面容器 */
         .page-container {
             width: 75%;
-            /* 设置页面宽度 */
             max-width: 1200px;
-            /* 最大宽度 */
             margin: 0 auto;
-            /* 居中 */
             height: 100%;
-            /* 设置页面高度 */
             display: flex;
             flex-direction: row;
         }
@@ -35,11 +32,9 @@
             background-color: #e2e9ef;
             padding: 20px;
             flex-shrink: 0;
-            /* 禁止左侧区域缩小 */
             overflow-y: auto;
-            /* 如果个人资料内容过多，可以滚动 */
             color: rgb(90, 90, 215);
-
+            box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.1);
         }
 
         /* 右侧内容 */
@@ -47,70 +42,56 @@
             width: 75%;
             padding: 20px;
             overflow-y: auto;
-            /* 可以滚动 */
-            /* display: flex;
-            flex-wrap: wrap; */
-            /* 设置目录项自动换行 */
             color: rgb(90, 90, 215);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
         }
 
         .content-header {
-            /* background-color: aquamarine; */
             width: 100%;
-            /* height: 100px; */
-            /* padding: 20px; */
-            /* box-sizing: border-box; */
         }
 
         /* 目录项的样式 */
-        /* 目录项的样式 */
         .directory ul {
-            /* background-color: rgb(209, 227, 190); */
             list-style: none;
-            /* 去掉列表样式 */
             padding: 0;
             display: flex;
             flex-wrap: wrap;
-            /* 设置目录项自动换行 */
             justify-content: space-around;
-            /* 让项目均匀分布 */
-
         }
 
         .directory li {
-            /* border: 1px solid #cccccc; */
-            /* 添加边框 */
             margin: 5px;
-            /* 设置目录项间距 */
             width: calc(30%);
-            /* 让目录项占据1/3宽度，并减去间距 */
             height: 100px;
             display: flex;
-            /* 使用 flexbox 布局 */
             justify-content: center;
-            /* 让内容居中 */
             align-items: center;
-            /* 垂直方向居中 */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
-            /* 添加过渡效果 */
         }
 
         .directory li a {
             display: block;
-            /* 使超链接元素填满整个项 */
             padding: 10px;
-            /* 添加内边距 */
             color: inherit;
-            /* 使用父元素的颜色 */
             text-decoration: none;
-            /* 去掉下划线 */
         }
 
         .directory li a:hover {
-            /* background-color: #b3aeee; */
-            /* 鼠标悬停时添加背景颜色 */
             transform: scale(1.1);
-            /* 鼠标悬停时放大 */
+        }
+
+        footer {
+            background-color: #98b8d3;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .profile p {
+            font-size: 12.5px;
+            /* 设置字体大小为14像素 */
         }
     </style>
 </head>
@@ -121,8 +102,8 @@
         <!-- 左侧个人资料 -->
         <div class="profile">
             <h2>研知有锂</h2>
-            <!-- 这里放置你的个人资料内容 -->
-
+            <p><i class="fa fa-envelope-o"></i> Education: ShanghaiTech Univ.</p>
+            <p><i class="fa fa-envelope-o"></i> Email: yangwj2022@shanghaitech.edu.cn</p>
         </div>
 
         <!-- 右侧内容 -->
@@ -138,12 +119,14 @@
                     <li><a href="article.html"><strong>Knowledge Share</strong></a></li>
                     <li><a href="Share.html"><strong>Paper Share</strong></a></li>
                     <li><a href="life.html"><strong>Life Photo</strong></a></li>
-                    <!-- 添加更多页面链接 -->
                 </ul>
             </div>
-            <!-- 这里放置你的其他内容 -->
         </div>
     </div>
+
+    <footer>
+        &copy; 2024 研知有锂. All Rights Reserved.
+    </footer>
 
 </body>
 

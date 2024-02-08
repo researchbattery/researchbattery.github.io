@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研知有锂</title>
+    <style>
+        /* 全局样式 */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 页面容器 */
+        .page-container {
+            width: 75%;
+            /* 设置页面宽度 */
+            max-width: 1200px;
+            /* 最大宽度 */
+            margin: 0 auto;
+            /* 居中 */
+            height: 100%;
+            /* 设置页面高度 */
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* 左侧个人资料 */
+        .profile {
+            width: 25%;
+            background-color: #e2e9ef;
+            padding: 20px;
+            flex-shrink: 0;
+            /* 禁止左侧区域缩小 */
+            overflow-y: auto;
+            /* 如果个人资料内容过多，可以滚动 */
+            color: rgb(90, 90, 215);
+
+        }
+
+        /* 右侧内容 */
+        .content {
+            width: 75%;
+            padding: 20px;
+            overflow-y: auto;
+            /* 可以滚动 */
+            /* display: flex;
+            flex-wrap: wrap; */
+            /* 设置目录项自动换行 */
+            color: rgb(90, 90, 215);
+        }
+
+        .content-header {
+            /* background-color: aquamarine; */
+            width: 100%;
+            /* height: 100px; */
+            /* padding: 20px; */
+            /* box-sizing: border-box; */
+        }
+
+        /* 目录项的样式 */
+        /* 目录项的样式 */
+        .directory ul {
+            /* background-color: rgb(209, 227, 190); */
+            list-style: none;
+            /* 去掉列表样式 */
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            /* 设置目录项自动换行 */
+            justify-content: space-around;
+            /* 让项目均匀分布 */
+
+        }
+
+        .directory li {
+            /* border: 1px solid #cccccc; */
+            /* 添加边框 */
+            margin: 5px;
+            /* 设置目录项间距 */
+            width: calc(30%);
+            /* 让目录项占据1/3宽度，并减去间距 */
+            height: 100px;
+            display: flex;
+            /* 使用 flexbox 布局 */
+            justify-content: center;
+            /* 让内容居中 */
+            align-items: center;
+            /* 垂直方向居中 */
+            transition: transform 0.3s ease-in-out;
+            /* 添加过渡效果 */
+        }
+
+        .directory li a {
+            display: block;
+            /* 使超链接元素填满整个项 */
+            padding: 10px;
+            /* 添加内边距 */
+            color: inherit;
+            /* 使用父元素的颜色 */
+            text-decoration: none;
+            /* 去掉下划线 */
+        }
+
+        .directory li a:hover {
+            /* background-color: #b3aeee; */
+            /* 鼠标悬停时添加背景颜色 */
+            transform: scale(1.1);
+            /* 鼠标悬停时放大 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-container">
+        <!-- 左侧个人资料 -->
+        <div class="profile">
+            <h2>研知有锂</h2>
+            <!-- 这里放置你的个人资料内容 -->
+
+        </div>
+
+        <!-- 右侧内容 -->
+        <div class="content">
+            <div class="content-header">
+                <h1>Battery Research Team | 研知有锂</h1>
+            </div>
+
+            <div class="directory">
+                <ul>
+                    <li><a href="about.html"><strong>About Us</strong></a></li>
+                    <li><a href="paper.html"><strong>Publication</strong></a></li>
+                    <li><a href="article.html"><strong>Knowledge Share</strong></a></li>
+                    <li><a href="Share.html"><strong>Paper Share</strong></a></li>
+                    <li><a href="life.html"><strong>Life Photo</strong></a></li>
+                    <!-- 添加更多页面链接 -->
+                </ul>
+            </div>
+            <!-- 这里放置你的其他内容 -->
+        </div>
+    </div>
+
+</body>
+
+</html>
